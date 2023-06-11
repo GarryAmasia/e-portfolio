@@ -1,0 +1,136 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span {
+  color: #242424;
+  text-align: center;
+  line-height: 1.25;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+p {
+  line-height: 1.5;
+  font-size: 16px;
+}
+
+li {
+  list-style-type: none;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.row {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.text--blue {
+  color: rgb(98, 153, 171);
+}
+/* ++++++++++++++++++++++NAVIGATION++++++++++++++++++++++++++ */
+
+nav {
+  height: 100px;
+  width: 100%;
+  max-width: 1000px;
+  /* background-color: tomato; */
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__link--list {
+  display: flex;
+}
+
+.nav__link--anchor {
+  text-decoration: none;
+  margin: 0 12px;
+  color: #242424;
+  font-weight: 700;
+}
+
+.nav__link--anchor-primary {
+  background-color: rgb(98, 153, 171);
+  padding: 8px 20px;
+  border-radius: 50px;
+  color: white;
+  transition: all 0.5s;
+}
+
+.nav__link--anchor-primary:hover {
+  background-color: white;
+  outline: 1px solid lightgrey;
+  color: black;
+}
+
+.personal__logo {
+  font-size: 24px;
+  color: rgb(98, 153, 171);
+  margin: 0 12px;
+  font-weight: bold;
+}
+
+/* ++++++++++++++++++++++ABOUT ME++++++++++++++++++++++++++ */
+
+#about-me {
+  min-height: 100vh;
+  /* background-color: rgb(255, 213, 206); */
+  display: flex;
+  flex-direction: column;
+}
+
+.about-me__info--container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 570px;
+  margin: 0 auto;
+  /* background-color: tomato; */
+}
+
+.about-me__picture--mask {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 8px 16px rgb(124, 124, 124);
+  margin-bottom: 28px;
+}
+
+.about-me__picture {
+  width: 100%;
+  /* improving my own pic */
+  /* transform: scale(1.4); */
+}
+
+.about-me__info--title {
+  margin-bottom: 16px;
+}
+
+.about-me__info--para {
+  font-size: 20px;
+  margin-bottom: 28px;
+  text-align: center;
+}
